@@ -1,0 +1,77 @@
+body[data-topbar=dark] #page-topbar {
+    border-color: #26282b;
+    border: none;
+    -webkit-box-shadow: 0 0.2rem 0.5rem rgb(18 38 63 / 30%);
+    box-shadow: 0 0.2rem 0.5rem rgb(18 38 63 / 30%);
+    background: #26282b;
+    background: linear-gradient(90deg, #26282b);
+}
+
+@media (max-width: 500px){
+    .header-item {
+        height: 35px;
+    }
+    .navbar-header{
+        height: 40px;
+    }
+    .page-content {
+        padding: calc(40px + 24px) calc(24px / 2) 60px calc(24px / 2);
+    }
+    .page-content > .container-fluid{
+        padding: 0px;
+    }
+    .page-content > .container-fluid > .container-fluid{
+        padding: 0px;
+    }
+    .vertical-menu{
+        top: 40px;
+    }
+    .logo {
+        line-height: 40px;
+    }
+    .grecaptcha-badge {
+        display: none;
+    }
+}
+
+@media (max-width: 800px){
+    .navbar-header{
+        height: 40px;
+    }
+    .logo {
+        line-height: 35px;
+    }
+    .header-item{
+        height: 40px;
+    }
+    .vertical-menu{
+        top: 40px;
+    }
+    .page-content {
+        padding: calc(40px + 24px) calc(24px / 2) 60px calc(24px / 2);
+    }
+    .footer {
+        display: none;
+    }
+}
+
+body[data-topbar=dark] .navbar-brand-box {
+    background-color: #26282b;
+    border-color: #26282b;
+}
+
+.main-content .page-content:before{
+    content: "";
+    background-image: url(../images/admin-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    opacity: 0.35;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
